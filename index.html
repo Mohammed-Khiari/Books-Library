@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./book.css">
+</head>
+<body>
+    
+    <div id="headerComponent">
+        <h1 id="headerTitle"> Library App </h1>
+        <p>
+             This is a project for 
+            <a href="https://www.theodinproject.com/lessons/javascript-library" target="_blank">
+                The Oden Project
+            </a>
+            in wich I have make a library using Object Constructors and LocalStorage. 
+        </p>
+        <p>
+            You can view the 
+            <a href="#" target="_blank"> Github Repository 
+            </a>
+            of this project
+        </p>
+
+        <button class="trigger" type="button">+ Add Book</button>
+    </div>
+    
+    <div class="modal hide">
+        <div class="modalContent">
+            <div class="modalHeader">
+                <h1 class="modalTitle"> Add a Book </h1>
+                <button type="button" class="close">
+                <span>×</span>
+                </button>
+            </div>
+            <div class="modalBody">
+                <form id="bookForm" action="" method="POST">
+    
+                    <label for="author">Author:</label><br>
+                    <input type="text" id="author" class="author" placeholder="Stephen King" required=""> <br>
+            
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="BookTitle" class="BookTitle" placeholder="Salem's Lot" required=""> <br>
+                    
+                    <label for="pages">Number of Pages:</label><br>
+                    <input type="number" id="pages" class="pages" min="1" required=""> <br>
+                    
+                    <span class="readQuestion">Have you read the book?</span>
+                    <label class="switch" for="read">
+                        <input type="checkbox" id="read" class="read">  
+                        <span class="slider round"></span>
+                    </label>
+                    <br>
+            
+                    <button type="submit" class="submitBtn"> Submit </button>
+                </form> 
+            </div>
+        </div> 
+    </div>
+    <!--
+    <div id="renderLibrary">
+        <div class="bookContainer">
+            <p class="bookTitle bookDetail">jkjkj</p>
+            <p class="bookAuthor bookDetail">kjkj</p>
+            <p class="numPages bookDetail">23665</p>
+            <p class="bookDetails">hhjkk jikjj olkllkl</p>
+            <button class="readBtn" type="button" style="background-color: limegreen";>
+                Read: Yes
+            </button>
+            <button class="deleteBookBtn" type="button">
+                Remove
+            </button> 
+        </div>
+    </div>
+    -->
+
+        
+    
+    <script src="./book.js"></script>
+</body>
+</html>
